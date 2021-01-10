@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@foreach (var item in Model.Tarefas.lista_tarefas)
+{
+    <div class="text-left">
+        <h4 class="TextoPergustas">@item.titulo <img src="~/Img/seta.png" class="setas expandir-contrair"></h4>
+
+        <p class="respostas contraido">@item.descricao</p>
+        <div><br></div>
+    </div>
+}

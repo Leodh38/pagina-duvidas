@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProjetoDuvidas</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header class="masthead">
+        <div class="overlay">
+            <img src="~/Img/header.png" />
+        </div>
+        <div class="headerRoxo">
+            <div class="btnheaderRoxo">
+                <div id="Compra"><span class="display-4">QUERO COMPRA</span></div>
+                <div id="Consultor"><img src="~/Img/seja_consultor.png" /> <span class="display-4">SEJA UM CONSULTOR(A)</span></div>
+                <div id="Franqueado"><img src="~/Img/editar.png" /> <span class="display-4">SEJA UM FRANQUEADO</span></div>
+            </div>
+        </div>
+        
+        <div class="headerRestrito">
+            <img src="~/Img/area_restrita.png" /> <span>AREA RESTRITA</span>
+        </div>
+        <div class="site-heading-inicio">
+            <div class="col-lg-8 col-md-10">
+                <div class="site-heading">
+                    <h1>Dúvidas</h1>
+                    <p class="subheading" style="margin: 0 auto"><b>Listamos aqui algumas duvidas frequentes</b>,</br> caso a sua duvida não esteja aqui você pode </br> entrar em contato conosco <a style="color:#a141eb"><b><u>clicando aqui</u></b></a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="footer">
+        &nbsp;
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
